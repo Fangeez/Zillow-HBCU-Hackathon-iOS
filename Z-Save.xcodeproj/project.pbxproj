@@ -26,6 +26,7 @@
 		A39EAFCE28CF957500F39244 /* ManageAccountExpenseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFCD28CF957500F39244 /* ManageAccountExpenseRowView.swift */; };
 		A39EAFD128CF9C2200F39244 /* iPaymentButton in Frameworks */ = {isa = PBXBuildFile; productRef = A39EAFD028CF9C2200F39244 /* iPaymentButton */; };
 		A39EAFD328CF9D6A00F39244 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFD228CF9D6A00F39244 /* PaymentHandler.swift */; };
+		A39EAFD528CFA82000F39244 /* UserPaymentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFD428CFA82000F39244 /* UserPaymentData.swift */; };
 		A3FC21A028CE9D24007594D2 /* Z_SaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC219F28CE9D24007594D2 /* Z_SaveApp.swift */; };
 		A3FC21A228CE9D24007594D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC21A128CE9D24007594D2 /* ContentView.swift */; };
 		A3FC21A428CE9D26007594D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FC21A328CE9D26007594D2 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		A39EAFCB28CF950800F39244 /* ManageAccountExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountExpensesView.swift; sourceTree = "<group>"; };
 		A39EAFCD28CF957500F39244 /* ManageAccountExpenseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountExpenseRowView.swift; sourceTree = "<group>"; };
 		A39EAFD228CF9D6A00F39244 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		A39EAFD428CFA82000F39244 /* UserPaymentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPaymentData.swift; sourceTree = "<group>"; };
 		A3FC219C28CE9D24007594D2 /* Z-Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Z-Save.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FC219F28CE9D24007594D2 /* Z_SaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z_SaveApp.swift; sourceTree = "<group>"; };
 		A3FC21A128CE9D24007594D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				A39EAFBD28CEE0D100F39244 /* BuyerCandidacy.swift */,
 				A39EAFC528CF869400F39244 /* WebView.swift */,
 				A39EAFD228CF9D6A00F39244 /* PaymentHandler.swift */,
+				A39EAFD428CFA82000F39244 /* UserPaymentData.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				A39EAFA928CEA8E300F39244 /* WelcomeView.swift in Sources */,
 				A39EAFBB28CEDD2800F39244 /* HorizontalCarouselUnitView.swift in Sources */,
 				A39EAFBE28CEE0D100F39244 /* BuyerCandidacy.swift in Sources */,
+				A39EAFD528CFA82000F39244 /* UserPaymentData.swift in Sources */,
 				A39EAFB528CEC15300F39244 /* DashboardCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

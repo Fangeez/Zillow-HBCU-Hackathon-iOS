@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DashboardHeaderView: View {
+    @EnvironmentObject var userPaymentData: UserPaymentData
     @State private var showZSaveSetup = false
     @State private var showWebView = false
     @State var totalAmount: String
@@ -24,6 +25,7 @@ struct DashboardHeaderView: View {
             SearchButtonView(activeLink: $showZSaveSetup, title: K.dashHeaderManageAccount)
                 .sheet(isPresented: $showZSaveSetup) {
                     ManageAccountFullView()
+                        .environmentObject(userPaymentData)
                 }
             SearchButtonView(activeLink: $showWebView, title: K.dashHeaderMortgageCalculator)
                 .sheet(isPresented: $showWebView) {

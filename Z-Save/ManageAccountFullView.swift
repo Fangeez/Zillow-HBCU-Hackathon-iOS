@@ -9,6 +9,7 @@ import SwiftUI
 import iPaymentButton
 
 struct ManageAccountFullView: View {
+    @EnvironmentObject var userPaymentData:UserPaymentData
     let paymentHandler = PaymentHandler()
     var body: some View {
         ScrollView {
@@ -16,6 +17,7 @@ struct ManageAccountFullView: View {
                 ManageAccountHeaderView(profilePictureString: "ProfilePic", name: "Nan Dawurang")
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
                 ManageAccountExpensesView()
+                    .environmentObject(userPaymentData)
                 iPaymentButton(type: .plain, style: .black) {
                     paymentHandler.startPayment {(success) in
                         if success {

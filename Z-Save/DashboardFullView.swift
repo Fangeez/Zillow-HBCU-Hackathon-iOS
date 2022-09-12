@@ -9,16 +9,16 @@ import SwiftUI
 
 struct DashboardFullView: View {
     @State private var showDashboardScreen = false
-    @State var zScore:String
-    @State var zScoreCosts:[Double]
-    @State var zScoreCategories:[String]
+    @State var zScore:Double
+    @ObservedObject var userPaymentData = UserPaymentData()
     var body: some View {
         ScrollView {
-            VStack {
-                DashboardHeaderView(totalAmount: $zScore.wrappedValue)
+            VStack { 
+                DashboardHeaderView(totalAmount: "$\(String(format: "%.2f", $zScore.wrappedValue))")
                     .padding()
-                PieChartView(values: zScoreCosts,
-                             names: zScoreCategories,
+                    .environmentObject(userPaymentData)
+                PieChartView(values: userPaymentData.paymentAmounts,
+                             names: userPaymentData.paymentCategories,
                              formatter: {value in String(format: "$%.2f", value)},
                              colors: [.blue, .yellow, .cyan],
                              backgroundColor: Color(.white),
@@ -31,7 +31,7 @@ struct DashboardFullView: View {
                 }
                 HStack {
                     DashboardCardView(statLabel: "April 8", statName: "Next Deposit Date")
-                    DashboardCardView(statLabel: "25%", statName: "Lorem")
+                    DashboardCardView(statLabel: "179", statName: "Z-Score")
                 }
                 
                 Text(K.checkoutHomesString)
@@ -52,6 +52,6 @@ struct DashboardFullView: View {
 
 struct DashboardFullView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardFullView(zScore: "$25,000", zScoreCosts: [1100, 600, 200], zScoreCategories: ["Principal", "Insurance", "Taxes"])
+        DashboardFullView(zScore: 25000)
     }
 }

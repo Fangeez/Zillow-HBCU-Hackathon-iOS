@@ -26,7 +26,7 @@ struct WelcomeView: View {
                 }
                 .padding()
                 .textFieldStyle(.roundedBorder)
-                NavigationLink(destination: DashboardFullView(zScore: "$25,000", zScoreCosts: [1100, 600, 200], zScoreCategories: ["Principal", "Insurance", "Taxes"]), isActive: $showDashboardScreen){
+                NavigationLink(destination: DashboardFullView(zScore: 25000), isActive: $showDashboardScreen){
                     SearchButtonView(activeLink: $showDashboardScreen, title: K.loginText)
                         .padding()
                 }
