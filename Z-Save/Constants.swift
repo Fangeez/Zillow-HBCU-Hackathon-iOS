@@ -15,9 +15,12 @@ struct K {
     
     // Dashboard
     static let dashHeaderAmount: String = "Total Z-Save Amount"
+    static let dashHeaderMortgageCalculator: String = "Mortgage Calculator"
     static let dashHeaderManageAccount: String = "Manage Account"
     static let candidacyString: String = "Candidacy:"
     static let checkoutHomesString: String = "Potential Homes to check out based on your Z-save activity"
+    
+    static let mortgageCalculatorUrl:String = "https://www.zillow.com/mortgage-calculator/"
 }
 
 

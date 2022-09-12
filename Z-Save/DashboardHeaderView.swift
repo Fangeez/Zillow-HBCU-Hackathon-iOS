@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DashboardHeaderView: View {
     @State private var showZSaveSetup = false
+    @State private var showWebView = false
     @State var totalAmount: String
     var body: some View {
         VStack {
@@ -20,6 +21,10 @@ struct DashboardHeaderView: View {
                 .font(Font.system(size: 50))
                 .fontWeight(.bold)
             SearchButtonView(activeLink: $showZSaveSetup, title: K.dashHeaderManageAccount)
+            SearchButtonView(activeLink: $showWebView, title: K.dashHeaderMortgageCalculator)
+                .sheet(isPresented: $showWebView) {
+                    WebView(url: URL(string: K.mortgageCalculatorUrl)!)
+                }
         }
     }
 }

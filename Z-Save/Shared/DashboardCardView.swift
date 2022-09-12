@@ -27,7 +27,7 @@ struct DashboardCardView: View {
                     .font(Font.system(size: 15))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                    
+                
             }
             
         }

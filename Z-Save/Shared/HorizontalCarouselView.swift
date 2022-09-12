@@ -12,14 +12,14 @@ struct HorizontalCarouselView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 16) {
                 ForEach(0 ..< 5) { item in
-                HorizontalCarouselUnitView(imageString: "home", address: "121 Westfield Ave.", price: "$450,000", candidacy: .strong)
-                    }
-                    .frame(width: 300, height: 300)
+                    HorizontalCarouselUnitView(imageString: "home", address: "121 Westfield Ave.", price: "$450,000", candidacy: .strong)
                 }
+                .frame(width: 300, height: 300)
             }
-            .padding()
         }
+        .padding()
     }
+}
 
 struct HorizontalCarouselView_Previews: PreviewProvider {
     static var previews: some View {

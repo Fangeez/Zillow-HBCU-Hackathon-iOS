@@ -39,12 +39,12 @@ struct DashboardFullView: View {
                     .font(Font.system(size: 20))
                     .multilineTextAlignment(.center)
                     .frame(width: 300, height: 100,alignment: .center)
-                    
+                
                 HorizontalCarouselView()
                 Button("Log Out") {}
                     .padding()
-                .foregroundColor(.red)
-                .font(Font.system(size: 20))
+                    .foregroundColor(.red)
+                    .font(Font.system(size: 20))
             }
         }
         .navigationBarHidden(true)
