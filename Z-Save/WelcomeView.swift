@@ -12,23 +12,28 @@ struct WelcomeView: View {
     @State var email:String
     @State var password:String
     var body: some View {
-        VStack {
-            Image("Z-Save_LogoUpdated")
-                .resizable()
-                .frame(width: 150, height: 150, alignment: .center)
-            Text(K.introText)
-                .font(.headline).bold()
-                .multilineTextAlignment(.center)
+        NavigationView {
             VStack {
-                TextField("Email", text: $email)
-                SecureField("Password", text: $password)
-            }
-            .padding()
-            .textFieldStyle(.roundedBorder)
-            SearchButtonView(activeLink: $showDashboardScreen, title: K.loginText)
+                Image("Z-Save_LogoUpdated")
+                    .resizable()
+                    .frame(width: 150, height: 150, alignment: .center)
+                Text(K.introText)
+                    .font(.headline).bold()
+                    .multilineTextAlignment(.center)
+                VStack {
+                    TextField("Email", text: $email)
+                    SecureField("Password", text: $password)
+                }
                 .padding()
-            Text("\(K.loginFooterText) [Register here](http://www.google.com)")
+                .textFieldStyle(.roundedBorder)
+                NavigationLink(destination: DashboardFullView(zScore: "$25,000", zScoreCosts: [1100, 600, 200], zScoreCategories: ["Principal", "Insurance", "Taxes"]), isActive: $showDashboardScreen){
+                    SearchButtonView(activeLink: $showDashboardScreen, title: K.loginText)
+                        .padding()
+                }
+                Text("\(K.loginFooterText) [Register here](http://www.google.com)")
+            }
         }
+        
     }
 }
 
