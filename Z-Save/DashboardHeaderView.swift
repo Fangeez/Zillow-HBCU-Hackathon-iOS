@@ -20,7 +20,11 @@ struct DashboardHeaderView: View {
                 .foregroundColor(Color("AppColor"))
                 .font(Font.system(size: 50))
                 .fontWeight(.bold)
+            
             SearchButtonView(activeLink: $showZSaveSetup, title: K.dashHeaderManageAccount)
+                .sheet(isPresented: $showZSaveSetup) {
+                    ManageAccountFullView()
+                }
             SearchButtonView(activeLink: $showWebView, title: K.dashHeaderMortgageCalculator)
                 .sheet(isPresented: $showWebView) {
                     WebView(url: URL(string: K.mortgageCalculatorUrl)!)

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftPieChart
 
 struct DashboardFullView: View {
     @State private var showDashboardScreen = false

@@ -20,6 +20,12 @@
 		A39EAFC228CF02A200F39244 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFC128CF02A200F39244 /* PieChartView.swift */; };
 		A39EAFC428CF02C400F39244 /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFC328CF02C400F39244 /* PieSliceView.swift */; };
 		A39EAFC628CF869400F39244 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFC528CF869400F39244 /* WebView.swift */; };
+		A39EAFC828CF8CBF00F39244 /* ManageAccountFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFC728CF8CBF00F39244 /* ManageAccountFullView.swift */; };
+		A39EAFCA28CF905A00F39244 /* ManageAccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFC928CF905A00F39244 /* ManageAccountHeaderView.swift */; };
+		A39EAFCC28CF950800F39244 /* ManageAccountExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFCB28CF950800F39244 /* ManageAccountExpensesView.swift */; };
+		A39EAFCE28CF957500F39244 /* ManageAccountExpenseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFCD28CF957500F39244 /* ManageAccountExpenseRowView.swift */; };
+		A39EAFD128CF9C2200F39244 /* iPaymentButton in Frameworks */ = {isa = PBXBuildFile; productRef = A39EAFD028CF9C2200F39244 /* iPaymentButton */; };
+		A39EAFD328CF9D6A00F39244 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EAFD228CF9D6A00F39244 /* PaymentHandler.swift */; };
 		A3FC21A028CE9D24007594D2 /* Z_SaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC219F28CE9D24007594D2 /* Z_SaveApp.swift */; };
 		A3FC21A228CE9D24007594D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC21A128CE9D24007594D2 /* ContentView.swift */; };
 		A3FC21A428CE9D26007594D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FC21A328CE9D26007594D2 /* Assets.xcassets */; };
@@ -41,6 +47,11 @@
 		A39EAFC128CF02A200F39244 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		A39EAFC328CF02C400F39244 /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		A39EAFC528CF869400F39244 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A39EAFC728CF8CBF00F39244 /* ManageAccountFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountFullView.swift; sourceTree = "<group>"; };
+		A39EAFC928CF905A00F39244 /* ManageAccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountHeaderView.swift; sourceTree = "<group>"; };
+		A39EAFCB28CF950800F39244 /* ManageAccountExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountExpensesView.swift; sourceTree = "<group>"; };
+		A39EAFCD28CF957500F39244 /* ManageAccountExpenseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountExpenseRowView.swift; sourceTree = "<group>"; };
+		A39EAFD228CF9D6A00F39244 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		A3FC219C28CE9D24007594D2 /* Z-Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Z-Save.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FC219F28CE9D24007594D2 /* Z_SaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z_SaveApp.swift; sourceTree = "<group>"; };
 		A3FC21A128CE9D24007594D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39EAFD128CF9C2200F39244 /* iPaymentButton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,7 @@
 			children = (
 				A39EAFBD28CEE0D100F39244 /* BuyerCandidacy.swift */,
 				A39EAFC528CF869400F39244 /* WebView.swift */,
+				A39EAFD228CF9D6A00F39244 /* PaymentHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -108,6 +121,10 @@
 				A39EAFA828CEA8E300F39244 /* WelcomeView.swift */,
 				A39EAFAD28CEB3FA00F39244 /* DashboardFullView.swift */,
 				A39EAFAF28CEB54900F39244 /* DashboardHeaderView.swift */,
+				A39EAFC728CF8CBF00F39244 /* ManageAccountFullView.swift */,
+				A39EAFC928CF905A00F39244 /* ManageAccountHeaderView.swift */,
+				A39EAFCB28CF950800F39244 /* ManageAccountExpensesView.swift */,
+				A39EAFCD28CF957500F39244 /* ManageAccountExpenseRowView.swift */,
 				A39EAFAC28CEB3B500F39244 /* Shared */,
 				A3FC21A328CE9D26007594D2 /* Assets.xcassets */,
 				A3FC21A528CE9D26007594D2 /* Preview Content */,
@@ -141,6 +158,7 @@
 			);
 			name = "Z-Save";
 			packageProductDependencies = (
+				A39EAFD028CF9C2200F39244 /* iPaymentButton */,
 			);
 			productName = "Z-Save";
 			productReference = A3FC219C28CE9D24007594D2 /* Z-Save.app */;
@@ -171,6 +189,7 @@
 			);
 			mainGroup = A3FC219328CE9D24007594D2;
 			packageReferences = (
+				A39EAFCF28CF9C2100F39244 /* XCRemoteSwiftPackageReference "iPaymentButton" */,
 			);
 			productRefGroup = A3FC219D28CE9D24007594D2 /* Products */;
 			projectDirPath = "";
@@ -200,6 +219,8 @@
 			files = (
 				A3FC21A228CE9D24007594D2 /* ContentView.swift in Sources */,
 				A39EAFB928CEDC3C00F39244 /* HorizontalCarouselView.swift in Sources */,
+				A39EAFCC28CF950800F39244 /* ManageAccountExpensesView.swift in Sources */,
+				A39EAFCE28CF957500F39244 /* ManageAccountExpenseRowView.swift in Sources */,
 				A39EAFC428CF02C400F39244 /* PieSliceView.swift in Sources */,
 				A39EAFC228CF02A200F39244 /* PieChartView.swift in Sources */,
 				A39EAFAE28CEB3FA00F39244 /* DashboardFullView.swift in Sources */,
@@ -208,7 +229,10 @@
 				A39EAFAB28CEAAA400F39244 /* SearchButtonView.swift in Sources */,
 				A39EAFB028CEB54900F39244 /* DashboardHeaderView.swift in Sources */,
 				A39EAFA728CEA2AC00F39244 /* Constants.swift in Sources */,
+				A39EAFC828CF8CBF00F39244 /* ManageAccountFullView.swift in Sources */,
 				A39EAFC028CEE38000F39244 /* Extensions.swift in Sources */,
+				A39EAFD328CF9D6A00F39244 /* PaymentHandler.swift in Sources */,
+				A39EAFCA28CF905A00F39244 /* ManageAccountHeaderView.swift in Sources */,
 				A39EAFA928CEA8E300F39244 /* WelcomeView.swift in Sources */,
 				A39EAFBB28CEDD2800F39244 /* HorizontalCarouselUnitView.swift in Sources */,
 				A39EAFBE28CEE0D100F39244 /* BuyerCandidacy.swift in Sources */,
@@ -413,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A39EAFCF28CF9C2100F39244 /* XCRemoteSwiftPackageReference "iPaymentButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminsage/iPaymentButton.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A39EAFD028CF9C2200F39244 /* iPaymentButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A39EAFCF28CF9C2100F39244 /* XCRemoteSwiftPackageReference "iPaymentButton" */;
+			productName = iPaymentButton;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3FC219428CE9D24007594D2 /* Project object */;
 }
